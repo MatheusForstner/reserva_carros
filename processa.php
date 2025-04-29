@@ -58,17 +58,17 @@ $mail->CharSet = 'UTF-8';
 try {
     // Configuração do servidor SMTP
     $mail->isSMTP();
-    $mail->Host = 'sender.emailemnuvem.com.br';
+    $mail->Host = 'stmp servidor';
     $mail->SMTPAuth = true;
-    $mail->Username = 'protheus@jng.com.br'; 
-    $mail->Password = 'XA1rfjl53yr2467J05rTMKZ8I8oUWEdaEWk78VrC'; 
+    $mail->Username = 'usuário email'; 
+    $mail->Password = 'senha'; 
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port = 587;
 
     // Destinatário
-    $mail->setFrom('ti@jng.com.br', 'Reserva Carro');
-    $mail->addAddress('rh@jng.com.br', 'Recurso Humano');
-    $mail->addAddress('ti@jng.com.br', 'Reserva Carro'); 
+    $mail->setFrom('seu email', 'Reserva Carro');
+    $mail->addAddress('add email', 'Recurso Humano');
+    $mail->addAddress('add email quiser', 'Reserva Carro'); 
 
     // Conteúdo do e-mail
     $mail->isHTML(true);
